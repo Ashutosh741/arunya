@@ -105,9 +105,9 @@ const RightBanner = () => {
           <div className="child3">
             <img src={mickey} id="childImg" />
           </div>
-          {/* <div className="child4">
+          <div className="child4">
             <img src={duck} id="childImg" />
-          </div> */}
+          </div>
         </div>
       </div>
       <div className="ring">
