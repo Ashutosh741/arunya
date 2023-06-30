@@ -30,25 +30,23 @@ function Banner() {
               <Row>
                 <Col md="6">
                   <div className="">
-                    <h3 className="heading mb-0">Learn anytime , anywhere </h3>
-                    <h3 className="subheading">
+                    <span className="heading">Learn anytime , anywhere<br></br> </span>
+                    <span className="subheading">
                       with{" "}
                       <span className="subheadingtag">
                         i-Arunya <span className="text-dark">!</span>
                       </span>{" "}
-                    </h3>
+                    </span>
                     <h4 className="realbannerbox">
                       Real Live Learning in small Batches for
                     </h4>
                     <div className="">
                       <div
-                        className="boyimage "
-                        style={{ position: "relative", zIndex: "8888" }}
-                      >
+                        className="boyimage ">
                         <img src={boyimg} alt="" />
                       </div>
                       <div className="starimage">
-                        <img src={star} alt="" style={{ width: "200px" }} />
+                        <img src={star} alt="" style={{ width: "250px" }} />
                       </div>
                     </div>
                   </div>
@@ -132,7 +130,7 @@ function Banner() {
         <div className="bg-layer w-100">
           <img src={bannerlayer} className="img-fluid w-100" alt="" />
         </div>
-        <div className="grass w-50">
+        <div className="grass">
           <img src={grass} className="img-fluid w-100" alt="" />
         </div>
         <div className="downlayer w-100">

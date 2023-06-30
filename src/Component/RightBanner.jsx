@@ -4,6 +4,7 @@ import buttonImg from '../images/button.png';
 import mouse from '../images/mouse.jpeg';
 import mickey from '../images/mickey.jpeg';
 import boundary from '../images/circle-2.png'
+import duck from '../images/duck.jpeg'
 const RightBanner = () => {
   const [img1, setImg1] = useState('');
   const [img2, setImg2] = useState('');
@@ -104,9 +105,13 @@ const RightBanner = () => {
           <div className="child3">
             <img src={mickey} id="childImg" />
           </div>
+          {/* <div className="child4">
+            <img src={duck} id="childImg" />
+          </div> */}
         </div>
       </div>
       <div className="ring">
+        {/* <img className='img_boundary' src = {boundary}/> */}
         <div className="indicatorSlider" onMouseLeave={handleMouseLeave}>
           <img
             src={buttonImg}

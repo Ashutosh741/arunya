@@ -2,13 +2,14 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import logo from "../images/logo.png";
 import downarrow from "../images/down-arrow.png";
-
+import iarunyalogo from '../images/iarunya logo-1.png'
 function Header() {
   return (
     <>
       <section className="header">
         <nav class="navbar navbar-expand-lg p-0 px-md-5  px-2">
           <a className="navbar-brand logo " href="#">
+            <img src = {iarunyalogo} className="iarunyalogo"/>
             <img src={logo} alt="" className="img-fluid arunya_logo" />
           </a>
           <button
@@ -24,7 +25,7 @@ function Header() {
           </button>
 
           <div class="collapse navbar-collapse ms-4 " id="navbarSupportedContent">
-            <div className="navbar-nav mr-auto">
+            <div className="navbar-nav mr-auto ms-2">
               <div class="btn-groups m-2">
                 <button
                   type="button"
@@ -34,7 +35,7 @@ function Header() {
                 >
                   Courses & Pricing
                 </button>
-                <div className="border-right"></div>
+                <div className="border-right" ></div>
                 {/* <!-- <span class="visually-hidden">Toggle Dropdown</span> --> */}
                 <ul class="dropdown-menu">
                   <li>
@@ -71,7 +72,7 @@ function Header() {
                 >
                   Knowledge Base
                 </button>
-                <div className="border-right"></div>
+                <div className="border-right" style = {{color : "black !important"}}></div>
                 {/* <!-- <span class="visually-hidden">Toggle Dropdown</span> --> */}
 
                 <ul class="dropdown-menu">
@@ -162,9 +163,10 @@ function Header() {
               <div
                 className="search-input input-group bg-white"
                 style={{
-                  width: "230px",
-                  borderRadius: "20px",
+                  width: "215px",
+                  borderRadius: "10px",
                   overflow: "hidden",
+                  height: "23px"
                 }}
               >
                 <input
@@ -175,17 +177,22 @@ function Header() {
                 <button
                   className="btn shadow-none px-2 p-0"
                   style={{
-                    width: "80px", //added
-                    borderRadius: "20px",
+                    width: "78px", //added
+                    borderRadius: "10px",
                     color: "#3cbb8c",
                     fontWeight:"bolder",
                     background: "#ccdc28",
-                    fontSize:"20px"
+                    fontSize:"18px",
+                    height: "30px",
+                    position:"relative",
+                    bottom:"2px",
+                    borderTopLeftRadius:"10px",
+                    borderBottomLeftRadius:"14px"
                   }}
                 >
                   Search
                 </button>
-                <i class="fa-solid fa-magnifying-glass search-icon me-2"></i>
+                <i class="fa-solid fa-magnifying-glass search-icon me-3"></i>
               </div>
             </div>
           </div>
@@ -194,17 +201,18 @@ function Header() {
           className="credintial"
           style={{ position: "absolute", right: "14px" }}
         >
-          <div className="border-right" style = {{left : "95px",right:"45px",height:"38px",top:"7px",borderBottomColor:"transparent",borderTopColor:"transparent",}}></div>
+          <div className="border-right" style = {{left : "123px",right:"55px",height:"34px",top:"7px",borderColor:"transparent rgb(46 90 168 / 66%)",boxShadow: "inset 1px 0px 0px 0px #ccc"}}></div>
           <button className="loginbtn btn me-3 fw-bold">
+          {/* #2e5aa8  */}
             LOGIN
-            <span className="ms-2">
+            <span style = {{marginLeft : "1.2rem"}}>
               <img src={downarrow} className="img-fluid" alt="" />
             </span>
           </button>
 
           <button className="signupbtn btn fw-bold">
             SIGNUP
-            <span className="ms-2">
+            <span style = {{marginLeft : "1.2rem"}}>
               <img src={downarrow} className="img-fluid" alt="" />
             </span>
           </button>
