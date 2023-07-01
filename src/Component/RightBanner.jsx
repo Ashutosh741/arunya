@@ -28,16 +28,22 @@ const RightBanner = () => {
           setImg2('');
           setImg3('');
           setImg4('');
-        } else if (currentRotation === 120) {
+        } else if (currentRotation === 90) {
           setImg1('');
           setImg2('active');
           setImg3('');
           setImg4('');
-        } else if (currentRotation === 240) {
+        } else if (currentRotation === 180) {
           setImg1('');
           setImg2('');
           setImg3('active');
           setImg4('');
+        }
+        else if (currentRotation === 270) {
+          setImg1('');
+          setImg2('');
+          setImg3('');
+          setImg4('active');
         }
       }
 
@@ -78,13 +84,18 @@ const RightBanner = () => {
   const handleButtonSlider2Click = () => {
     const circleElement = circleRef.current;
     circleElement.style.animation = 'none'; // Stop the rotation animation
-    circleElement.style.transform = 'rotate(120deg)'; // Set the rotation to 120 degrees
+    circleElement.style.transform = 'rotate(90deg)'; // Set the rotation to 120 degrees
   };
 
   const handleButtonSlider3Click = () => {
     const circleElement = circleRef.current;
     circleElement.style.animation = 'none'; // Stop the rotation animation
-    circleElement.style.transform = 'rotate(240deg)'; // Set the rotation to 240 degrees
+    circleElement.style.transform = 'rotate(180deg)'; // Set the rotation to 240 degrees
+  };
+  const handleButtonSlider4Click = () => {
+    const circleElement = circleRef.current;
+    circleElement.style.animation = 'none'; // Stop the rotation animation
+    circleElement.style.transform = 'rotate(180deg)'; // Set the rotation to 240 degrees
   };
 
   const handleMouseLeave = () => {
@@ -131,7 +142,7 @@ const RightBanner = () => {
           <img
             src={buttonImg}
             className={`buttonSlider4 ${img4}`}
-            onMouseEnter={handleButtonSlider3Click}
+            onMouseEnter={handleButtonSlider4Click}
           />
         </div>
       </div>

@@ -30,7 +30,7 @@ function Banner() {
               <Row>
                 <Col md="6">
                   <div className="">
-                    <span className="heading">Learn anytime , anywhere<br></br> </span>
+                    <span className="heading">Learn anytime, anywhere<br></br> </span>
                     <span className="subheading">
                       with{" "}
                       <span className="subheadingtag">

@@ -35,7 +35,7 @@ function Header() {
                 >
                   Courses & Pricing
                 </button>
-                <div className="border-right" ></div>
+                <div className="border-right"  ></div>
                 {/* <!-- <span class="visually-hidden">Toggle Dropdown</span> --> */}
                 <ul class="dropdown-menu">
                   <li>
@@ -72,7 +72,7 @@ function Header() {
                 >
                   Knowledge Base
                 </button>
-                <div className="border-right" style = {{color : "black !important"}}></div>
+                <div className="border-right" style = {{boxShadow: "rgb(0 0 0 / 21%) 0px 0px 0px inset",borderLeftColor: "rgb(0 0 0 / 24%)"}}></div>
                 {/* <!-- <span class="visually-hidden">Toggle Dropdown</span> --> */}
 
                 <ul class="dropdown-menu">
@@ -163,7 +163,7 @@ function Header() {
               <div
                 className="search-input input-group bg-white"
                 style={{
-                  width: "215px",
+                  width: "200px",
                   borderRadius: "10px",
                   overflow: "hidden",
                   height: "23px"
@@ -201,20 +201,22 @@ function Header() {
           className="credintial"
           style={{ position: "absolute", right: "14px" }}
         >
-          <div className="border-right" style = {{left : "123px",right:"55px",height:"34px",top:"7px",borderColor:"transparent rgb(46 90 168 / 66%)",boxShadow: "inset 1px 0px 0px 0px #ccc"}}></div>
-          <button className="loginbtn btn me-3 fw-bold">
+          <div className="border-right" style = {{left : "124px",right:"58px",height:"34px",top:"7px",borderColor: "transparent rgb(68 20 51 / 23%)",boxShadow: "rgb(204, 204, 204) 1px 0px 0px 0px inset"}}></div>
+          <button className="loginbtn btn me-3 fw-bold ">
           {/* #2e5aa8  */}
             LOGIN
-            <span style = {{marginLeft : "1.2rem"}}>
-              <img src={downarrow} className="img-fluid" alt="" />
-            </span>
+            <div className="angleDown">
+              >
+              {/* <img style={{content : '>'}} className="img-fluid" alt="" /> */}
+            </div>
           </button>
 
           <button className="signupbtn btn fw-bold">
             SIGNUP
-            <span style = {{marginLeft : "1.2rem"}}>
-              <img src={downarrow} className="img-fluid" alt="" />
-            </span>
+            <div className="angleDown">
+              >
+              {/* <img style={{content : '>'}} className="img-fluid" alt="" /> */}
+            </div>   
           </button>
         </div>
       </section>
