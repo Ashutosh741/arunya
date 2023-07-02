@@ -77,7 +77,6 @@ const RightBanner = () => {
   const handleButtonSlider1Click = () => {
     const circleElement = circleRef.current;
     circleElement.style.animation = 'none'; // Stop the rotation animation
-    const currentRotation = getRotationAngle(circleElement);
     circleElement.style.transform = `rotate(0deg)`; // Set the rotation to 0 degrees
   };
 
@@ -95,7 +94,7 @@ const RightBanner = () => {
   const handleButtonSlider4Click = () => {
     const circleElement = circleRef.current;
     circleElement.style.animation = 'none'; // Stop the rotation animation
-    circleElement.style.transform = 'rotate(180deg)'; // Set the rotation to 240 degrees
+    circleElement.style.transform = 'rotate(270deg)'; // Set the rotation to 240 degrees
   };
 
   const handleMouseLeave = () => {
@@ -123,26 +122,33 @@ const RightBanner = () => {
       </div>
       <div className="ring">
         {/* <img className='img_boundary' src = {boundary}/> */}
-        <div className="indicatorSlider" onMouseLeave={handleMouseLeave}>
+        <div className="indicatorSlider" >
           <img
             src={buttonImg}
             className={`buttonSlider1 ${img1}`}
             onMouseEnter={handleButtonSlider1Click}
+            onMouseLeave={handleMouseLeave}
           />
           <img
             src={buttonImg}
             className={`buttonSlider2 ${img2}`}
             onMouseEnter={handleButtonSlider2Click}
+            onMouseLeave={handleMouseLeave}
+
           />
           <img
             src={buttonImg}
             className={`buttonSlider3 ${img3}`}
             onMouseEnter={handleButtonSlider3Click}
+            onMouseLeave={handleMouseLeave}
+
           />
           <img
             src={buttonImg}
             className={`buttonSlider4 ${img4}`}
             onMouseEnter={handleButtonSlider4Click}
+            onMouseLeave={handleMouseLeave}
+
           />
         </div>
       </div>

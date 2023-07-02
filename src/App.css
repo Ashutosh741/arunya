@@ -1272,13 +1272,17 @@ body {
   height: 100px;
   width: 100px;
   transform: rotate(15deg);
-  z-index: 33 ;
+  z-index: 3 ;
   /* border : 1px solid black; */
   /* z-index: 338; */
   /* opacity: 0.5; */
 }
 
 
+.indicatorSlider{
+  position: relative;
+  bottom: 50px;;
+}
 
 .buttonSlider1{
   position: relative;
