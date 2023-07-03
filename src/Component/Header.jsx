@@ -35,7 +35,7 @@ function Header() {
                 >
                   Courses & Pricing
                 </button>
-                <div className="border-right"  ></div>
+                <div className="border-right" style = {{borderLeftColor: "rgb(0 0 0 / 24%)"}} ></div>
                 {/* <!-- <span class="visually-hidden">Toggle Dropdown</span> --> */}
                 <ul class="dropdown-menu">
                   <li>
@@ -110,7 +110,7 @@ function Header() {
                 >
                   Blogs
                 </button>
-                <div className="border-right"></div>
+                <div className="border-right" style = {{borderLeftColor: "rgb(0 0 0 / 24%)"}}></div>
                 {/* <!-- <span class="visually-hidden">Toggle Dropdown</span> --> */}
 
                 <ul class="dropdown-menu">
@@ -201,15 +201,16 @@ function Header() {
           className="credintial"
           style={{ position: "absolute", right: "14px" }}
         >
-          <div className="border-right" style = {{left : "124px",right:"58px",height:"34px",top:"7px",borderColor: "transparent rgb(68 20 51 / 23%)",boxShadow: "rgb(204, 204, 204) 1px 0px 0px 0px inset"}}></div>
+          <div className="border-right" 
+          style = {{left : "124px",right:"58px",height:"34px",top:"7px",borderBottomColor:"transparent",borderTopColor:"transparent",borderRightColor:"transparent",boxShadow: "-1px 0px #2e5aa8"}}></div>
           <button className="loginbtn btn me-3 fw-bold ">
-          {/* #2e5aa8  */}
             LOGIN
             <div className="angleDown">
               >
               {/* <img style={{content : '>'}} className="img-fluid" alt="" /> */}
             </div>
           </button>
+          <div className="border-right" style = {{right:"58px",height:"34px",top:"7px",boxShadow: "rgb(215, 57, 41) 1px 0px 0px 0px" , border:"1px solid rgb(255 255 255 / 0%)"}}></div>
 
           <button className="signupbtn btn fw-bold">
             SIGNUP
@@ -224,4 +225,9 @@ function Header() {
   );
 }
 
+// box-shadow: rgb(215, 57, 41) 1px 0px 0px 0px;
+// border: 1px solid rgb(255 255 255 / 0%);
+
+// box-shadow: -1px 0px #2e5aa8;  => login
+//     box-shadow: 1px 0px 0px 0px #d73929; => signup
 export default Header;
