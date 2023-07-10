@@ -13,11 +13,12 @@ import bannerslider from "../images/bannerslider.jpg";
 import catslider from "../images/catslider.jpg";
 import bannerbg from "../images/bg.png";
 import RightBanner from "./RightBanner";
+import Caraousel from "./Caraousel";
 
 function Banner() {
   return (
     <>
-      <section className="banner">
+      <section className="banner ">
         {/* <div className="bannerimg ">
           <img src={bannerbg} className="img-fluid " alt="" />
         </div> */}
@@ -41,10 +42,11 @@ function Banner() {
                       Real Live Learning in small Batches for
                     </h4>
                     <div className="">
-                      <div
-                        className="boyimage ">
+                      <div className="boyimage">
                         <img src={boyimg} alt="" />
+                        
                       </div>
+
                       <div className="starimage">
                         <img src={star} alt="" style={{ width: "250px" }} />
                       </div>
@@ -52,76 +54,12 @@ function Banner() {
                   </div>
                 </Col>
                 <Col md="6" style={{ position: "relative" }}>
-                  {/* <div className="carousel_slide">
-                    <div
-                      id="carouselExampleIndicators"
-                      class="carousel slide text-center"
-                      data-bs-ride="carousel"
-                    >
-                      <div class="carousel-indicators">
-                        <button
-                          type="button"
-                          data-bs-target="#carouselExampleIndicators"
-                          data-bs-slide-to="0"
-                          class="active"
-                          aria-current="true"
-                          aria-label="Slide 1"
-                        >
-                          <img
-                            src={buttonimg}
-                            className="img-fluid"
-                            style={{ height: "100px" }}
-                            alt=""
-                          />
-                          <h4>App Compability</h4>
-                        </button>
-                        <button
-                          type="button"
-                          data-bs-target="#carouselExampleIndicators"
-                          data-bs-slide-to="1"
-                          aria-label="Slide 2"
-                        >
-                          <img
-                            src={buttonimg}
-                            className="img-fluid"
-                            style={{ height: "100px" }}
-                            alt=""
-                          />
-                          <h4>App Compability</h4>
-                        </button>
-                        <button
-                          type="button"
-                          data-bs-target="#carouselExampleIndicators"
-                          data-bs-slide-to="2"
-                          aria-label="Slide 3"
-                        >
-                          <img
-                            src={buttonimg}
-                            className="img-fluid"
-                            style={{ height: "100px" }}
-                            alt=""
-                          />
-                          <h4>App Compability</h4>
-                        </button>
-                      </div>
-                      <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <img src={catslider} class="img-fluid " alt="..." />
-                        </div>
-                        <div class="carousel-item">
-                          <img
-                            src={bannerslider}
-                            class="img-fluid "
-                            alt="..."
-                          />
-                        </div>
-                        <div class="carousel-item">
-                          <img src={dog} class="img-fluid " alt="..." />
-                        </div>
-                      </div>
-                    </div>
-                  </div> */}
-                  <RightBanner/>
+                  <div className="carouselMobile d-lg-none d-xl-none d-md-block mb-5">
+                          <Caraousel/>
+                  </div>
+                  <div className="rightBanner">
+                    <RightBanner/>  
+                  </div>
                 </Col>
               </Row>
             </Col>

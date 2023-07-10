@@ -3,6 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import videscreen from "../images/vidscreen.png";
 // import videscreen from '../images/learn-border.svg'
 import video from "../images/videos.png";
+import CardBottom from "./CardBottom";
 
 const data = [
   {
@@ -96,7 +97,7 @@ function Learn() {
             <Col md="11">
               <Row>
                 <Col md="12">
-                  <div className="text-center">
+                  <div className="text-center learningText">
                     <span className="learnheading">Here’s How You Learn &<br></br></span>
                     <span className="learnheading2">Become a Champion</span>
                     <p className="learnpara pt-3">
@@ -190,10 +191,13 @@ function Learn() {
             </Col>
           </Row>
         </Container>
-        <div style={{ height: "60vh" }} className={`w-100 `}>
+        <div style={{ height: "60vh" }} className={`w-100 curve`}>
           <img src={videscreen} className="w-100 videoScreenSize" alt="" />
         </div>
         <div className={`overlay ${shrinkSection ? "shrink" : ""}`}></div>
+      </section>
+      <section className="d-lg-none d-xl-none d-md-block">
+      <CardBottom/>
       </section>
     </>
   );
@@ -201,4 +205,4 @@ function Learn() {
 
 export default Learn;
 
-// when the scroll it become 100vw when scoll reac this sectio then animation will reduce the width slowly and do width 0
+{/* // when the scroll it become 100vw when scoll reac this sectio then animation will reduce the width slowly and do width 0 */}

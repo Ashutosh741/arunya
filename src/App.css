@@ -32,7 +32,7 @@ body {
   background: var(--light-green);
   position: fixed;
   width: 100%;
-  padding-top: 0px;
+  /* padding-top: 0px; */
   z-index: 99999;
 }
 
@@ -45,33 +45,31 @@ body {
 }
 
 .logo {
-  width: 224px;
-  height: 59px;
+  /* width: 224px; */
+  /* height: 59px; */
   background: white;
-  padding: 6px;
-  border-radius: 10px;
-  margin: 2px;
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+  margin: 0.1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 4px;
+  gap: 0.4rem;
 }
-.arunya_logo{
-  height : 50px;
+.arunya_logo {
+  height: 3rem;
 }
-.iarunyalogo{
-  height: 40px;
+.iarunyalogo {
+  height: 2.6rem;
 }
 
 .banner {
   background: url("../src/images/bg.png") no-repeat;
   height: 100vh;
   background-size: contain;
-  /* background-repeat: repeat-x; */
   position: relative;
   overflow: hidden;
   background-size: 100%;
-  /* background-position: center; */
   background-position-y: -100px ;
 }
 .bg-layer {
@@ -98,14 +96,14 @@ body {
 
 .toplayer {
   position: absolute;
-  top: 96px;
-  z-index: 99999900;
-  width: 390px;
-  height: 90px;
+  top: 6rem;
+  z-index: 9;
+  width: 25rem;
+  /* height: 69px; */
 }
 
 .toplayer img {
-  height: 80px;
+  height: 5rem;
 }
 
 .subheading {
@@ -131,7 +129,7 @@ body {
 }
 
 .banner .toppadding {
-  padding-top: 200px;
+  padding-top: 12.5rem;
 }
 
 .subheadingtag {
@@ -397,24 +395,33 @@ body {
   cursor: pointer;
   position: absolute;
   color: #d3d789;
-  right: 32%;
-  top: 4px;
+  right: 34%;
+  top: 0.3rem;
 }
-
 .input-group{
   box-shadow: 0px 0px 0 2px #d3de25;
   border-radius: 10px;
 }
-.navbaar-nav{
+.navbaar-nav {
   position: relative;
-  left: 25px;
+  left: 2rem;
 }
-
 /* give border color to search input */
-
 .calling-icon {
   background-color: #596aba;
-  padding: 7px;
+  padding: 0.5rem;
+}
+
+.searchText{
+  width: 4.8rem;
+  color: rgb(60, 187, 140);
+  font-weight: bolder;
+  background: rgb(204, 220, 40);
+  font-size: 1.2rem;
+  height: 2rem;
+  position: relative;
+  bottom: 0.2rem;
+  border-radius: 0.8rem !important;
 }
 
 /* carousel css starts here*/
@@ -438,11 +445,19 @@ body {
   border: 1px solid #dddddd91;
   position: absolute;
   height: 98%;
-  right: 30px;
-  top: 1px;
-  z-index: 9999;
+  right: 2rem;
+  top: 0.1rem;
+  z-index: 9971;
 }
-
+.signupBorder {
+  border: 1px solid #dddddd91;
+  position: absolute;
+  z-index: 9999;
+  right: 3.7rem;
+  height: 2.1rem;
+  top: 0.5rem;
+  box-shadow: rgb(215, 57, 41) 1px 0px 0px 0px;
+}
 
 
 
@@ -509,6 +524,7 @@ body {
 .footerheading {
   color: white;
   font-weight: 600;
+
 }
 
 .footer .col-md-3 {
@@ -867,19 +883,18 @@ body {
 }
 
 .external {
-  height: 36px;
-  width: 36px;
+  height: 2.3rem;
+  width: 2.3rem;
   background: white;
   text-align: center;
-  line-height: 36px;
+  line-height: 2.3rem;
   border-radius: 50%;
 }
 
 .topheader img {
-  height: 30px;
-  width: 30px;
+  height: 2rem;
+  width: 2rem;
 }
-
 .educationheading3 {
   position: absolute;
   right: 100px;
@@ -902,38 +917,45 @@ body {
 .credintial {
   position: absolute;
   background-color: #d2e8cfab;
-  right: 20px !important;
+  right: 1rem !important;
   border-radius: 0 0px 20px 20px;
-  padding: 7px 18px;
+  padding: 0.5rem 1.5rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  width : 23%;
+  width: 23%;
   text-align: center;
-  margin-top : 2px;
+  margin-top: 0.1rem;
 }
 .loginbtn {
   background: #4b6eb6 !important;
   color: white !important;
-  border-radius: 20px;
-  width: 125px;
-  font-size: 20px;
-  padding: 2px;
-  padding-left: 14px;
+  border-radius: 3rem;
+  width: 8rem;
+  font-size: 1.3rem;
+  padding: 0.1rem;
+  padding-left: 0.7rem;
   display: inline-flex;
-  /* box-shadow:0px 4px 0px #23926b, inset 0px 2px 0px #86dab7;; */
-  /* box-shadow:  2px 0px #23926b, inset 0px 1px 0px #86dab7; */
-  /* box-shadow: 0px 4px 0px #23926b,inset 0px 1px 0px 1px #b1cacc; */
-  /* box-shadow:0px 2px 0px #80a4a8, inset 0px 1px 0px #86dab7; */
   box-shadow: inset 0px -1px 0px #23926b, 0px 1px 1px 1px #86dab7;
-
 }
+
+.loginBorder{
+  left: 7.7rem;
+  /* right: 45px; */
+  height: 2.2rem;
+  top: 0.5rem;
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  box-shadow: rgb(46, 90, 168) -1px 0px;
+}
+
 .signupbtn {
   background-color: #f5842f !important;
   color: white !important;
-  border-radius: 20px;
-  width: 136px;
-  font-size: 20px;
-  padding: 2px; 
-  padding-left: 14px;
+  border-radius: 3rem;
+  width: 8.6rem;
+  font-size: 1.3rem;
+  padding: 0.1rem; 
+  padding-left: 0.7rem;
 
   display: inline-flex;
   /* box-shadow:0px 2px 0px #23926b, inset 0px 1px 0px #86dab7; */
@@ -1023,22 +1045,29 @@ body {
 .carousel-indicators button:nth-child(1) img {
   height: 100px;
   position: absolute;
-  left: 72px;
-  bottom: -26px;
+  left: 2px;
+  bottom: 7px;
 }
 
 .carousel-indicators button:nth-child(2) img {
   height: 100px;
   position: absolute;
-  right: 150px;
+  right: 180px;
   top: -28px;
 }
 
 .carousel-indicators button:nth-child(3) img {
   height: 100px;
   position: absolute;
-  right: 22px;
-  top: -70px;
+  right: 95px;
+  top: -30px;
+}
+
+.carousel-indicators button:nth-child(4) img {
+  height: 100px;
+  position: absolute;
+  right: 12px;
+  top: -55px;
 }
 
 .carousel-indicators button:nth-child(1) h4 {
@@ -1111,15 +1140,12 @@ body {
   padding: 0;
   padding: 0 10px;
   overflow: hidden;
-  height: 36px;
-  font-size: 20px;
+  height: 2rem;
+  font-size: 1.2rem;
   align-items: center;
   justify-content: center;
   display: flex;
-  box-shadow:0px 4px 0px #23926b, inset 0px 2px 0px #86dab7;;
-  /* border-top-style: inset;
-  border-top-color: coral;
-  border-top-width: 7px; */
+  box-shadow: 0px 4px 0px #23926b, inset 0px 2px 0px #86dab7;
   border: 2px solid #9ed7bf;
 }
 
@@ -1354,4 +1380,14 @@ bottom: -3px;
   /* translate:rotate(70deg); */
   transform: rotate(90deg) !important;
   /* width : 20px; */
+}
+
+.Zindex{
+  z-index: 99999;
+}
+
+.carouselMobile {
+    position: relative !important;
+    bottom: 3rem !important;
+    left: -1rem;
 }

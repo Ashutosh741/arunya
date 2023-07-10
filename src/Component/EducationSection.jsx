@@ -18,7 +18,7 @@ function EducationSection() {
                     <h4 className="educationheading2">New Education</h4> 
                     <h3 className="educationheading3"> Policy</h3>
                     <h3 className="educationyear"> 2023</h3>
-                    <img src={educationimg} className="img-fluid" alt="" />
+                    <img src={educationimg} className="img-fluid studentImage" alt="" />
                   </div>
                 </Col>
                 <Col md="6">

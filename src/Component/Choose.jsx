@@ -39,7 +39,7 @@ function Choose() {
                       </div>
                     </Col>
                     <Col md="7">
-                      <Row className="align-items-center justify-content-center">
+                      <Row className="align-items-center justify-content-center ">
                         {/* <Col md="6">
                           <div className="affordableimg">
                             <img

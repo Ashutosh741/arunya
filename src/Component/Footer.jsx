@@ -8,12 +8,12 @@ function Footer() {
       <section className="footer py-5">
         <Container>
           <Row className="align-items-center justify-content-center">
-            <Col md="6">
+            <Col md="6" xs = "6">
               <div className="">
                 <img src={logo} className="img-fluid logo" alt="" />
               </div>
             </Col>
-            <Col md="6">
+            <Col md="6" xs = "6">
               <div className="social-icons">
                 <ul className="">
                   <li>
@@ -35,8 +35,8 @@ function Footer() {
               </div>
             </Col>
             <Col md="12">
-              <Row className="mt-md-5">
-                <Col md="2">
+              <Row className="mt-md-5 mt-3 justify-content-center m-md-auto text-center">
+                <Col md="2" xs= "3">
                   <h3 className="footerheading">Company</h3>
                   <div className="bottom-border"></div>
                   <ul>
@@ -54,7 +54,7 @@ function Footer() {
                     </li>
                   </ul>
                 </Col>
-                <Col md="2">
+                <Col md="2" xs= "3">
                   <h3 className="footerheading">Classes</h3>
                   <div className="bottom-border"></div>
                   <ul>
@@ -72,7 +72,7 @@ function Footer() {
                     </li>
                   </ul>
                 </Col>
-                <Col md="2">
+                <Col md="2" xs= "3" >
                   <h3 className="footerheading">Account</h3>
                   <div className="bottom-border"></div>
                   <ul>
@@ -90,7 +90,7 @@ function Footer() {
                     </li>
                   </ul>
                 </Col>
-                <Col md="2">
+                <Col md="2" xs= "3">
                   <h3 className="footerheading">Courses</h3>
                   <div className="bottom-border"></div>
                   <ul>
@@ -108,8 +108,11 @@ function Footer() {
                     </li>
                   </ul>
                 </Col>
-                <Col md="4">
-                  <h3 className="footerheading">Subscribe</h3>
+
+              </Row>
+            </Col>
+            <Col md="4" xs = "12">
+                  <h3 className="footerheading ">Subscribe</h3>
                   <div className="bottom-border"></div>
                   <input
                     type="text"
@@ -122,9 +125,7 @@ function Footer() {
                   >
                     Subscribe
                   </button>
-                </Col>
-              </Row>
-            </Col>
+             </Col>
           </Row>
         </Container>
       </section>

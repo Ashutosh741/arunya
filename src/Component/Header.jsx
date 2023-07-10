@@ -142,7 +142,7 @@ function Header() {
             </div>
             <div className="navbaar-nav ms-auto d-flex align-items-center justify-content-end gap-2">
               <div class="call-btn p-2 d-flex gap-1 align-items-center">
-                <span class="text-white fw-bolder" style = {{fontSize:"20px"}}>Call Us</span>
+                <span class="text-white fw-bolder" style = {{fontSize:"1.2rem",width: "-0.9rem"}}>Call Us</span>
 
                 <a href="tel:+04345353353" class="external">
                   <i class="fa-solid fa-phone calling-icon rounded-5 text-white"></i>
@@ -163,10 +163,10 @@ function Header() {
               <div
                 className="search-input input-group bg-white"
                 style={{
-                  width: "200px",
-                  borderRadius: "10px",
+                  width: "12rem",
+                  borderRadius: "0.5rem",
                   overflow: "hidden",
-                  height: "23px"
+                  height: "1.5rem"
                 }}
               >
                 <input
@@ -175,20 +175,7 @@ function Header() {
                 />
 
                 <button
-                  className="btn shadow-none px-2 p-0"
-                  style={{
-                    width: "78px", //added
-                    borderRadius: "10px",
-                    color: "#3cbb8c",
-                    fontWeight:"bolder",
-                    background: "#ccdc28",
-                    fontSize:"18px",
-                    height: "30px",
-                    position:"relative",
-                    bottom:"2px",
-                    borderTopLeftRadius:"10px",
-                    borderBottomLeftRadius:"14px"
-                  }}
+                  className="btn shadow-none searchText px-2 p-0"
                 >
                   Search
                 </button>
@@ -201,8 +188,7 @@ function Header() {
           className="credintial"
           style={{ position: "absolute", right: "14px" }}
         >
-          <div className="border-right" 
-          style = {{left : "124px",right:"58px",height:"34px",top:"7px",borderBottomColor:"transparent",borderTopColor:"transparent",borderRightColor:"transparent",boxShadow: "-1px 0px #2e5aa8"}}></div>
+          <div className="loginBorder border-right" ></div>
           <button className="loginbtn btn me-3 fw-bold ">
             LOGIN
             <div className="angleDown">
@@ -210,7 +196,7 @@ function Header() {
               {/* <img style={{content : '>'}} className="img-fluid" alt="" /> */}
             </div>
           </button>
-          <div className="border-right" style = {{right:"58px",height:"34px",top:"7px",boxShadow: "rgb(215, 57, 41) 1px 0px 0px 0px" , border:"1px solid rgb(255 255 255 / 0%)"}}></div>
+          <div className="signupBorder border-right"></div>
 
           <button className="signupbtn btn fw-bold">
             SIGNUP

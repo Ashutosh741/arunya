@@ -14,7 +14,7 @@ function TopHeader() {
                 style={{ cursor: "pointer" }}
               >
                 <img src={languageimg} className="img-fluid mb-1" alt="" />
-                <span className="text-white" style={{ fontSize: "20px",fontFamily:"'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif",fontWeight:"bolder" }}>
+                <span className="text-white" style={{ fontSize: "1.1rem",fontFamily:"'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif",fontWeight:"bolder" }}>
                   English
                 </span>
               </div>
