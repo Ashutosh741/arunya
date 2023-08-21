@@ -36,7 +36,7 @@ function EducationSection() {
                   </div>
                   <div className="yellowbox mt-5">
                     <span className="" style = {{fontFamily:"cursive",fontSize:"32px",paddingBottom:"100px"}}>
-                      Covered maximum lessons <br></br>within the syllabus, <span className="bold" style ={{fontFamily:"monospace",fontSize:"40px"}}>NO</span> lesson<br></br>
+                      Covered maximum lessons <br></br>within the syllabus, <span className="bold" style ={{fontFamily:"monospace",fontSize:"3rem"}}>NO</span> lesson<br></br>
                       missing
                     </span>
                   </div>

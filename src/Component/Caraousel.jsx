@@ -14,29 +14,27 @@ const Caraousel = () => {
       <Row className="align-items-center justify-content-center toppadding">
         <Col md="12">
           <Row>
-            <Col md="12" style={{ position: "relative" }}>
+            <Col md="12" >
               <div className="carousel_slide">
                 <div
                   id="carouselExampleIndicators"
                   class="carousel slide text-center"
                   data-bs-ride="carousel"
                 >
-                  <div class="carousel-indicators">
+                  <div class="carousel-indicators" style = {{ marginLeft:"auto", marginRight :"auto"}}>
                     <button
                       type="button"
                       data-bs-target="#carouselExampleIndicators"
                       data-bs-slide-to="0"
-                      class="active"
-                      aria-current="true"
+                      // aria-current="true"
                       aria-label="Slide 1"
                     >
                       <img
                         src={buttonimg}
                         className="img-fluid"
-                        style={{ height: "70px", right:"55px"}}
+                        style={{ height: "70px"}}
                         alt=""
                       />
-                      {/* <h4>App Compability</h4> */}
                     </button>
                     <button
                       type="button"
@@ -50,7 +48,6 @@ const Caraousel = () => {
                         style={{ height: "70px" }}
                         alt=""
                       />
-                      {/* <h4>App Compability</h4> */}
                     </button>
                     <button
                       type="button"
@@ -64,7 +61,6 @@ const Caraousel = () => {
                         style={{ height: "70px"}}
                         alt=""
                       />
-                      {/* <h4>App Compability</h4> */}
                     </button>
 
 
@@ -80,13 +76,26 @@ const Caraousel = () => {
                         style={{ height: "70px"}}
                         alt=""
                       />
-                      {/* <h4>App Compability</h4> */}
+                    </button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="4"
+                      aria-label="Slide 5"
+                      class="active"
+                    >
+                      <img
+                        src={buttonimg}
+                        className="img-fluid"
+                        style={{ height: "70px"}}
+                        alt=""
+                      />
                     </button>
                     
                     
                   </div>
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
+                  <div class="carousel-inner" style = {{textAlign : "end"}}>
+                    <div class="carousel-item ">
                       <img src={catslider} class="img-fluid " alt="..." />
                     </div>
                     <div class="carousel-item">
@@ -101,6 +110,9 @@ const Caraousel = () => {
                     </div>
                     <div class="carousel-item">
                       <img src={duck} class="img-fluid " alt="..." />
+                    </div>
+                    <div class="carousel-item active">
+                      <img src={catslider} class="img-fluid " alt="..." />
                     </div>
                   </div>
                 </div>

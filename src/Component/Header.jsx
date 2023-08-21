@@ -13,7 +13,7 @@ function Header() {
             <img src={logo} alt="" className="img-fluid arunya_logo" />
           </a>
           <button
-            className="navbar-toggler"
+            className="navbar-toggler shadow-none"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -166,16 +166,19 @@ function Header() {
                   width: "12rem",
                   borderRadius: "0.5rem",
                   overflow: "hidden",
+                  display: "flex",
+                  alignItems: "center",
                   height: "1.5rem"
                 }}
               >
                 <input
                   type="search"
                   className="form-control  shadow-none searchbar border-0 px-2 p-0"
+                  style={{ flex: "1", height: "1.5rem" }}
                 />
 
                 <button
-                  className="btn shadow-none searchText px-2 p-0"
+                  className="btn shadow-none searchText p-0"
                 >
                   Search
                 </button>
@@ -192,7 +195,7 @@ function Header() {
           <button className="loginbtn btn me-3 fw-bold ">
             LOGIN
             <div className="angleDown">
-              >
+              {">"}
               {/* <img style={{content : '>'}} className="img-fluid" alt="" /> */}
             </div>
           </button>
@@ -201,7 +204,7 @@ function Header() {
           <button className="signupbtn btn fw-bold">
             SIGNUP
             <div className="angleDown">
-              >
+              {">"}
               {/* <img style={{content : '>'}} className="img-fluid" alt="" /> */}
             </div>   
           </button>

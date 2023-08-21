@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import bannerlayer from "../images/banner-layer.svg";
 import underlayer from "../images/underlayer.svg";
@@ -16,6 +16,9 @@ import RightBanner from "./RightBanner";
 import Caraousel from "./Caraousel";
 
 function Banner() {
+  // useEffect(() => {
+  //   document.body.style.zoom = "67.5%";
+  // }, []);
   return (
     <>
       <section className="banner ">
@@ -30,8 +33,8 @@ function Banner() {
             <Col md="11">
               <Row>
                 <Col md="6">
-                  <div className="">
-                    <span className="heading">Learn anytime, anywhere<br></br> </span>
+                  <div className="position-relative">
+                    <h1 className="heading">Learn anytime, anywhere<br></br> </h1>
                     <span className="subheading">
                       with{" "}
                       <span className="subheadingtag">
@@ -41,7 +44,7 @@ function Banner() {
                     <h4 className="realbannerbox">
                       Real Live Learning in small Batches for
                     </h4>
-                    <div className="">
+                    <div className="position-relative">
                       <div className="boyimage">
                         <img src={boyimg} alt="" />
                         
@@ -65,6 +68,8 @@ function Banner() {
             </Col>
           </Row>
         </Container>
+        
+        
         <div className="bg-layer w-100">
           <img src={bannerlayer} className="img-fluid w-100" alt="" />
         </div>

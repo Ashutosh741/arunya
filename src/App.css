@@ -26,6 +26,8 @@
 
 body {
   font-family: "Tinos", serif;
+
+  overflow-x: hidden;
 }
 
 .topheader {
@@ -45,8 +47,8 @@ body {
 }
 
 .logo {
-  /* width: 224px; */
-  /* height: 59px; */
+  width: 224px;
+  height: 59px;
   background: white;
   padding: 0.4rem;
   border-radius: 0.5rem;
@@ -70,9 +72,10 @@ body {
   position: relative;
   overflow: hidden;
   background-size: 100%;
-  background-position-y: -100px ;
+  /* background-position-y: -100px ; */
 }
 .bg-layer {
+  
   position: absolute;
   bottom: 10px;
 }
@@ -85,7 +88,7 @@ body {
 
 .grass {
   position: absolute;
-  right: -170px;
+  right: -10rem;
   bottom: 20px;
   width: 950px;
   filter : brightness(92%);
@@ -118,13 +121,13 @@ body {
   color: var(--red);
   /* font-family: arialBold; */
   font-weight: 700;
-  font-size: 65px;
+  font-size: 3.4rem;
   /* font-size: 36px; */
   font-weight: 700;
   letter-spacing: 1px;
   position: absolute;
-  left : 97px;
-  top : 160px;
+  left : 1.5rem;
+  top : -1.5rem;
   line-height: 1;
 }
 
@@ -175,11 +178,11 @@ body {
 .yellowbox {
   /* color: #d3de25; */
   box-shadow: 0 0 10px white;
-  border-radius: 30px;
+  border-radius: 3rem;
   background: #f9a61c;
   color: white;
-  padding-bottom: 40px;
-  padding-top: 10px;
+  padding-bottom: 4rem;
+  padding-top: 2rem;
   /* margin-bottom: 30px; */
   height: 280px;
   text-align: center;
@@ -187,20 +190,20 @@ body {
 
 .educationheading1 {
   position: relative;
-  font-size: 32px;
+  font-size: 2.5rem;
   margin-bottom: 0;
   color: #808385;
-  left: 32px;
+  left: 2rem;
   font-weight: normal;
 }
 
 .educationheading2 {
   position: absolute;
-  font-size: 68px;
-  top: 30px;
+  font-size: 4rem;
+  top: 2rem;
   color: var(--red);
   font-weight: 700;
-  left: 32px;
+  left: 2rem;
   font-family: cursive;
 }
 
@@ -234,6 +237,7 @@ body {
 .chooseheading .brandname {
   font-size: 80px;
   font-weight: bolder;
+  white-space: nowrap;
 }
 
 .circle1 {
@@ -295,14 +299,14 @@ body {
 }
 
 .affordablebox {
-  height: 110px;
+  height: 8rem;
   color: white;
   text-align: center;
   display: flex;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   align-items: center;
-  border-radius: 20px;
-  margin-bottom: 30px;
+  border-radius: 2rem;
+  margin-bottom: 0rem;
 }
 
 .col-md-6:nth-child(1) .affordablebox {
@@ -322,7 +326,7 @@ body {
 }
 
 .choose {
-  padding-bottom: 100px;
+  padding-bottom: 2rem;
 }
 .choose .container-fluid {
   padding-bottom: 80px;
@@ -348,9 +352,9 @@ body {
 }
 
 .educationpara {
-  line-height: 40px;
-  font-size: 20px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  line-height: 2.5rem;
+  font-size: 1.4rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .educationpara .highlight {
@@ -463,11 +467,12 @@ body {
 
 
 .starimage {
+  /* ✅ */
   position: absolute;
   z-index: 8888;
   bottom: 80px;
-  left: 32%;
-  top : 54%;
+  left: 62%;
+  bottom : 12%;
 }
 
 
@@ -897,9 +902,9 @@ body {
 }
 .educationheading3 {
   position: absolute;
-  right: 100px;
-  top: 89px;
-  font-size: 60px;
+  right: 2rem;
+  top: 6rem;
+  font-size: 3rem;
   color: #f9a61c;
   font-weight: bolder !important;
   font-family: cursive;
@@ -908,11 +913,10 @@ body {
 .educationyear {
   position: absolute;
   right: 120px;
-  top: 160px;
+  top: 10rem;
   font-weight: 600;
-  font-size: 34px;
+  font-size: 2rem;
   font-family: cursive;
-
 }
 .credintial {
   position: absolute;
@@ -945,7 +949,7 @@ body {
   border-bottom-color: transparent;
   border-top-color: transparent;
   border-right-color: transparent;
-  box-shadow: rgb(46, 90, 168) -1px 0px;
+  /* box-shadow: rgb(46, 90, 168) -1px 0px; */
 }
 
 .signupbtn {
@@ -1070,13 +1074,12 @@ body {
   top: -55px;
 }
 
-.carousel-indicators button:nth-child(1) h4 {
+/* .carousel-indicators button:nth-child(1) img {
+  height: 100px;
   position: absolute;
-  font-size: 13px;
-  color: white;
-  right: -34%;
-  bottom: 10px;
-}
+  left: 57px;
+  bottom: 1px;
+} */
 
 .carousel-indicators button:nth-child(2) h4 {
   position: absolute;
@@ -1103,9 +1106,9 @@ body {
   z-index: 88888;
 }
 
-#carouselExampleIndicators {
+/* #carouselExampleIndicators {
   left: 70px !important;
-}
+} */
 
 .overlay {
   position: absolute;
@@ -1390,4 +1393,9 @@ bottom: -3px;
     position: relative !important;
     bottom: 3rem !important;
     left: -1rem;
+}
+
+.affordablebox{
+  display: flex;
+  justify-content: center;
 }

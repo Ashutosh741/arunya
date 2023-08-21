@@ -2,7 +2,10 @@
 /* footer bottom border is not align */
 
 
-@media only screen and (min-width : 305px) and (max-width: 768px){
+@media only screen and (min-width : 305px) and (max-width: 1200px){
+    body{
+        zoom : 67.5%
+    }
     .navbar-nav{
         margin-left: 0px !important;
         flex-direction: inherit;
@@ -24,9 +27,32 @@
     }
 
     .call-btn{
+        white-space: nowrap;
         position: relative;
         bottom: 110px;
-        left : 62%;
+        left : 60%;
+    }
+
+    .searchText{
+        font-size: 1.2rem;
+        margin-right: -2rem;
+    }
+
+    .search-icon{
+        position: relative;
+         left: -65px; 
+         top : -4px;
+    }
+
+
+    .resFooter{
+        /* margin-top: 1rem */
+        padding: 1rem;
+    }
+
+    .navbar-nav .dropdown-menu {
+        position: absolute;
+        z-index: 99999;
     }
 
     .input-group{
@@ -35,25 +61,22 @@
         right : 16%;
     }
 
-    .search-icon{
-    left: 74%;
-    }
-
     .credintial{
         width:fit-content
     }
     .loginBorder{
-        left: 114px !important;
+        left: 120px !important;
     height: 35px !important;
     top: 8px !important;
     }
+
     .signupBorder {
         border: 1px solid #dddddd91;
         position: absolute;
         /* top: 1px; */
-        right: 45px;
+        right: 54px;
         height: 34px;
-        top: 7px;
+        top: 9px;
         box-shadow: "rgb(215, 57, 41) 1px 0px 0px 0px";
         /* border: 1px solid rgb(255 255 255 / 0%); */
         /* border: 3px solid black !important; */
@@ -61,8 +84,8 @@
 
     .toplayer {
         position: absolute;
-        top: 88px;
-        width: 209px;
+        top: 6rem;
+        width: 24%;
     }
     #root {
         width: fit-content;
@@ -70,16 +93,14 @@
         overflow: hidden;
     }
     .heading {
-        left: 5%;
-        top: 18%;
         font-size: -1rem !important;
     }
     .subheading {
         font-size: 3rem;
         font-family: Georgia, 'Times New Roman', Times, serif;
         position: relative;
-        top: 7rem;
-        left: 3%;
+        top: 5rem;
+        left: 1.5rem;
     }
     .subheadingtag {
         font-size: 55px;
@@ -87,14 +108,16 @@
     .realbannerbox {
         font-size: 150%;
         position: relative;
-        left: 3%;
-        top: 7rem;
+        left: 0.5rem;
+        top: 5rem;
+        margin: 0px 1rem;
     }
     .grass {
-        position: absolute;
-        bottom: 13px;
+        /* ✅ */
+        position: absolute; 
+        bottom: 0rem;
         width: 150%;
-
+        right: -13rem;
     }
     .boyimage {
         z-index: 8888;
@@ -103,18 +126,15 @@
         left: 11px;
         display: none;
     }
+    .carouselMobile{
+        left : 0px
+    }
     .starimage {
-        position: absolute;
-        z-index: 8888;
-        left: 56%;
-        top: 55%;
         display: none   ;
     }
-    .starimage img {
-        width : 180px !important;
-    }
+
     .banner {
-    height: 138vh;
+    height: 100%;
     background-size: cover;
     }
     .rightBanner{
@@ -128,40 +148,42 @@
     }
     .choosebg {
         position: absolute;
-        top: -20% !important;
+        top: -21% !important;
+    }
+    .videoboxSection{
+        display:none !important;
     }
     .choosebg img {
-        height: 950px;
+        height: 60rem;
     }
     .educationyear {
         position: absolute;
-        right: 100px;
-        
+        right: 2rem;
     }
     .studentImage{
-        padding-top: 15px;;
+        padding-top: 0rem;;
     }
     .yellowbox{
-        padding-top: 40px;
+        padding-top: 3rem;
     }
     .transcircle1 {
         top: 290px;
     }
     .transcircle2 {
         /* top: 240px; */
-        top : 6%;
+        top : 15%;
     }
     .transcircle4 {
         /* top: 240px; */
-        top : 6%;
-        right : -11%;
+        top : 15%;
+        right : -4%;
     }
     .transcircle3 {
-        right: 20rem;
-        top: 6%;
+        right: 25rem;
+        top: 15%;
     }
     .transcircle5 {
-        bottom: 8rem;
+        /* bottom: 3rem; */
         left: -2rem;
     }
     .transcircle6 {
@@ -169,20 +191,20 @@
         bottom: 11rem;
     }
     .transcircle7 {
-        bottom: 8rem;
-        right: 25%;
+        /* bottom: 3rem; */
+        right: 31%;
     }
     .transcircle8 {
         bottom: 11rem;
     }
     .transcircle9 {
-        bottom: 8rem;
-        right: -3rem;
+        /* bottom: 3rem; */
+        right: -1rem;
         border: 15px solid #f7a29a;
     }
     .learningText{
         position: relative;
-        top : -140px;
+        top : -50px;
     }
     .learnheading {
         font-size: 40px;
@@ -227,17 +249,99 @@
         position: absolute;
         right: 25%;
     }
-     .brandname {
-        font-size: 70px !important;
+    .brandname {
+        font-size: 4rem !important;
     }
     .chooseheading {
-        font-size: 35px;
+        font-size: 2.2em;
     }
     .overlay{
         top : 100px !important
     }
-    .learn{
+    .overlay, .curve{
         display: none;
+    }
+    /* .carousel-indicators button:nth-child(1) img {
+        height: 100px;
+        position: absolute;
+        left: 13.5%;
+        bottom: 1%;
+    } */
+
+    /* .carousel-indicators button:nth-child(1) img {
+        height: 100px;
+        position: absolute;
+        left: 6px;
+        bottom: 1px;
+      } */
+
+      
+.carousel-indicators button:nth-child(1) img {
+    height: 100px;
+    position: absolute;
+    left: 2px;
+    bottom: 7px;
+    display: none;
+  }
+  
+  .carousel-indicators button:nth-child(2) img {
+    height: 100px;
+    position: absolute;
+    right: 200px;
+    top: -28px;
+  }
+  
+  .carousel-indicators button:nth-child(3) img {
+    height: 100px;
+    position: absolute;
+    right: 105px;
+    top: -30px;
+  }
+  
+  .carousel-indicators button:nth-child(4) img {
+    height: 100px;
+    position: absolute;
+    right: 21px;
+    top: -55px;
+  }
+  .carousel-indicators button:nth-child(5) img {
+    height: 100px;
+    position: absolute;
+    right: 282px;
+    top: -55px;
+}
+      #carouselExampleIndicators{
+        left : 0px !important;
+      }
+
+      .educationheading2{
+        font-size: 3.5rem;
+      }
+
+      .button_shadow::after {
+        left: -8px;
+        bottom: -1px;
+    }
+    .btn-groups button {
+        font-size: 71%;
+    }
+    .navbar-nav .border-right {
+        top: 0rem;
+    }
+}
+
+
+@media only screen and (min-width : 445px) and (max-width: 1200px){
+    .realbannerbox {
+        top: 2rem;
+    }
+
+    .subheading {
+        top: 1.8rem;
+    }
+
+    .choosebg {
+        top: -18% !important;
     }
 }
 

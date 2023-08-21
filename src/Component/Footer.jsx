@@ -1,6 +1,9 @@
+
+
 import React from "react";
 import { Col, Container, Nav, NavLink, Row } from "react-bootstrap";
 import logo from "../images/logo.png";
+import iarunyalogo from '../images/iarunya logo-1.png'
 
 function Footer() {
   return (
@@ -8,13 +11,14 @@ function Footer() {
       <section className="footer py-5">
         <Container>
           <Row className="align-items-center justify-content-center">
-            <Col md="6" xs = "6">
-              <div className="">
-                <img src={logo} className="img-fluid logo" alt="" />
-              </div>
+            <Col md="6" xs="6">
+            <a className="navbar-brand logo " href="#">
+            <img src = {iarunyalogo} className="iarunyalogo"/>
+            <img src={logo} alt="" className="img-fluid arunya_logo" />
+          </a>
             </Col>
-            <Col md="6" xs = "6">
-              <div className="social-icons">
+            <Col md="6" xs="6">
+              <div className="social-icons mb-xl-5">
                 <ul className="">
                   <li>
                     <i class="fa-brands fa-facebook-f"></i>
@@ -35,8 +39,8 @@ function Footer() {
               </div>
             </Col>
             <Col md="12">
-              <Row className="mt-md-5 mt-3 justify-content-center m-md-auto text-center">
-                <Col md="2" xs= "3">
+              <Row className="mt-md-5 resFooter">
+                <Col md="2" xs="6">
                   <h3 className="footerheading">Company</h3>
                   <div className="bottom-border"></div>
                   <ul>
@@ -54,7 +58,7 @@ function Footer() {
                     </li>
                   </ul>
                 </Col>
-                <Col md="2" xs= "3">
+                <Col md="2" xs="6">
                   <h3 className="footerheading">Classes</h3>
                   <div className="bottom-border"></div>
                   <ul>
@@ -72,7 +76,7 @@ function Footer() {
                     </li>
                   </ul>
                 </Col>
-                <Col md="2" xs= "3" >
+                <Col md="2" xs="6">
                   <h3 className="footerheading">Account</h3>
                   <div className="bottom-border"></div>
                   <ul>
@@ -90,7 +94,7 @@ function Footer() {
                     </li>
                   </ul>
                 </Col>
-                <Col md="2" xs= "3">
+                <Col md="2" xs="6">
                   <h3 className="footerheading">Courses</h3>
                   <div className="bottom-border"></div>
                   <ul>
@@ -108,11 +112,8 @@ function Footer() {
                     </li>
                   </ul>
                 </Col>
-
-              </Row>
-            </Col>
-            <Col md="4" xs = "12">
-                  <h3 className="footerheading ">Subscribe</h3>
+                <Col md="4" >
+                  <h3 className="footerheading">Subscribe</h3>
                   <div className="bottom-border"></div>
                   <input
                     type="text"
@@ -125,7 +126,9 @@ function Footer() {
                   >
                     Subscribe
                   </button>
-             </Col>
+                </Col>
+              </Row>
+            </Col>
           </Row>
         </Container>
       </section>

@@ -7,7 +7,7 @@ import video from "../images/videos.png";
 const CardBottom = () => {
   return (
     <>
-    <div className="container">
+    <div className="container cardBottom mb-5 pb-5">
       <div className="row">
         <div className="col-6">
           <Card style = {{margin : "5px"}}>
