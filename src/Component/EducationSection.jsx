@@ -8,7 +8,7 @@ function EducationSection() {
   return (
     <>
       <section className="space" style={{ paddingTop: "3rem" }}>
-        <Container>
+        <Container fluid>
           <Row className="align-items-center justify-content-center">
             <Col md="11">
               <Row className="align-items-center justify-content-center">

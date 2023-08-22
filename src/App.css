@@ -227,7 +227,15 @@ body {
 .choosebg {
   position: absolute;
   width: 100%;
-  top: -182px;
+  top: -10rem;
+}
+
+.learningText .learnheading2{
+  white-space: nowrap;
+}
+
+.realbannerbox{
+  white-space: nowrap
 }
 
 .chooseheading {
@@ -327,6 +335,7 @@ body {
 
 .choose {
   padding-bottom: 2rem;
+  width: 100%;
 }
 .choose .container-fluid {
   padding-bottom: 80px;
@@ -700,32 +709,37 @@ body {
   width: 17%;
 }
 
-.videobox1 {
+/* .videobox1 {
   top: 19rem;
   left: 6.7%;
+} */
+.videobox1 {
+  top: 17.5rem;
+  left: 8%;
 }
-
 .videobox2 {
-  bottom: 5.5rem;
-  left: 24.5%;
+  bottom: 17%;
+  left: 26%;
 }
 
 .videobox3 {
-  top: 19rem;
-  left: 42.5%;
+  top: 17.5rem;
+
+  left: 43.9%;
 }
 .videobox4 {
-  bottom: 5.5rem;
-  right: 23%;
+  bottom: 17%;
+  right: 21%;
 }
 
 .videobox5 {
-  top: 19rem;
-  right: 5.3%;
+  top: 17.5rem;
+
+  right: 3%;
 }
 
 .insidevideo {
-  height: 160px;
+  height: 100%;
   overflow: hidden;
   width: 90%;
   border-radius: 15px;

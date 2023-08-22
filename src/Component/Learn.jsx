@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import videscreen from "../images/vidscreen.png";
+import videscreen2 from "../images/vidscreen2.svg";
+
 // import videscreen from '../images/learn-border.svg'
 import video from "../images/videos.png";
 import CardBottom from "./CardBottom";
@@ -96,7 +98,7 @@ function Learn() {
           <Row className="align-items-center justify-content-center">
             <Col md="11">
               <Row>
-                <Col md="12">
+                <Col md="12 resTop20rem">
                   <div className="text-center learningText">
                     <span className="learnheading">Here’s How You Learn &<br></br></span>
                     <span className="learnheading2">Become a Champion</span>
@@ -192,7 +194,7 @@ function Learn() {
           </Row>
         </Container>
         <div style={{ height: "60vh" }} className={`w-100 curve`}>
-          <img src={videscreen} className="w-100 videoScreenSize" alt="" />
+          <img src={videscreen2} className="videoScreenSize" alt="" />
         </div>
         <div className={`overlay ${shrinkSection ? "shrink" : ""}`}></div>
       </section>

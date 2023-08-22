@@ -1,10 +1,83 @@
 /* login and signup divider correct it  --> make it individual in both login and signup */
 /* footer bottom border is not align */
 
+@media only screen and (min-width : 1200px) and (max-width: 1300px){
+    .videobox2 ,.videobox4{
+      bottom: 24%;
+    }
+    .choosebg {
+        top: -16rem;
+      }
+      .banner .heading{
+        white-space: nowrap;
+      }
+
+      .credintial{
+        width: 26%;
+      }
+
+
+}
+
+@media only screen and (min-width : 1300px) and (max-width: 1400px){
+      .videobox2 ,.videobox4{
+        bottom: 19%;
+      }
+      .choosebg {
+        top: -12rem;
+      }
+      .yellowbox span{
+        line-height: 2.5rem;
+      }
+
+      .banner .heading{
+        white-space: nowrap;
+      }
+
+      .credintial{
+        width: 25%;
+      }
+      
+}
+
+@media only screen and (min-width : 1400px) and (max-width: 1450px){
+    .videobox2 ,.videobox4{
+      bottom: 24.5%;
+    }
+    .banner .heading{
+        white-space: nowrap;
+      }
+
+      /* .credintial{
+        width: 23%;
+      } */
+}
+@media only screen and (min-width : 1450px) and (max-width: 1600px){
+    .videobox2 ,.videobox4{
+      bottom: 13.5%;
+    }
+
+}
+
+@media only screen and (min-width : 1600px) and (max-width: 1800px){
+    .videobox2 ,.videobox4{
+      bottom: 20%;
+    }
+}
+
+
+
 
 @media only screen and (min-width : 305px) and (max-width: 1200px){
+        .learningText .learnheading2{
+            white-space: nowrap;
+        }
+
+        .realbannerbox{
+            white-space: nowrap
+        }
     body{
-        zoom : 67.5%
+        zoom : 65.5%
     }
     .navbar-nav{
         margin-left: 0px !important;
@@ -70,6 +143,15 @@
     top: 8px !important;
     }
 
+    .angleDown {
+        margin-left: 2rem;
+
+        /* width: 20px; */
+    }
+
+    .signupbtn {
+        padding-left: 0.5rem;
+    }
     .signupBorder {
         border: 1px solid #dddddd91;
         position: absolute;
@@ -344,6 +426,35 @@
         top: -18% !important;
     }
 }
+
+
+@media only screen and (min-width : 1800px) and (max-width: 2100px){
+    .videobox2 ,.videobox4{
+      bottom: 21%;
+    }
+    .videobox1,.videobox3,.videobox5{
+        top: 19rem;
+    }
+
+    /* .choosebg img {
+        height: 1000px;
+        width: 150% !important;
+    }
+    .resTop20rem{
+        margin-top: 20rem !important;
+
+    } */
+}
+
+@media only screen and (min-width : 2400px) and (max-width: 2600px){
+    .videobox2 ,.videobox4{
+      bottom: 21.5%;
+    }
+    .videobox1,.videobox3,.videobox5{
+        top: 19rem;
+    }
+}
+
 
 /* @media only screen and (min-width : 593px) and (max-width: 900px){
     .navbar-nav{

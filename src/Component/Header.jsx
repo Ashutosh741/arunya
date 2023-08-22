@@ -37,7 +37,7 @@ function Header() {
                 </button>
                 <div className="border-right" style = {{borderLeftColor: "rgb(0 0 0 / 24%)"}} ></div>
                 {/* <!-- <span class="visually-hidden">Toggle Dropdown</span> --> */}
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu dropdown-menu-start">
                   <li>
                     <a class="dropdown-item" href="#">
                       Action
@@ -75,7 +75,7 @@ function Header() {
                 <div className="border-right" style = {{boxShadow: "rgb(0 0 0 / 21%) 0px 0px 0px inset",borderLeftColor: "rgb(0 0 0 / 24%)"}}></div>
                 {/* <!-- <span class="visually-hidden">Toggle Dropdown</span> --> */}
 
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu dropdown-menu-start">
                   <li>
                     <a class="dropdown-item" href="#">
                       Action
@@ -113,7 +113,7 @@ function Header() {
                 <div className="border-right" style = {{borderLeftColor: "rgb(0 0 0 / 24%)"}}></div>
                 {/* <!-- <span class="visually-hidden">Toggle Dropdown</span> --> */}
 
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu dropdown-menu-start">
                   <li>
                     <a class="dropdown-item" href="#">
                       Action

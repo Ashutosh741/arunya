@@ -22,7 +22,7 @@ const RightBanner = () => {
       const currentRotation = getRotationAngle(circleElement);
 
       if (currentRotation === previousRotation.current) {
-        console.log('Angle when previous and current angle are the same:', currentRotation);
+        // console.log('Angle when previous and current angle are the same:', currentRotation);
         if (currentRotation === 0) {
           setImg1('active');
           setImg2('');
